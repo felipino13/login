@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/user_nameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="@color/campo"
+        android:hint="Insira o Nome de Usuario"
+        android:layout_marginTop="150dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="@color/campo"
+        android:hint="Insira a senha novamente"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/user_nameLogin"/>
+
+    <Button
+        android:id="@+id/btn_sign_upLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entrar"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/botao"
+        android:layout_below="@id/passwordLogin"/>
+
+</RelativeLayout>

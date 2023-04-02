@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fundo"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Usuario"
+        android:textSize="20sp"
+        android:background="@color/campo"
+        android:padding="16dp"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira a Senha"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="@color/campo"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/user_name"/>
+
+    <EditText
+        android:id="@+id/re_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="@color/campo"
+        android:hint="Insira a senha novamente"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/password"/>
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cadastrar"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/botao"
+        android:layout_below="@id/re_password"/>
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ja tenho cadastro"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/botao"
+        android:layout_below="@id/btn_sign_up"/>
+
+
+</RelativeLayout>
